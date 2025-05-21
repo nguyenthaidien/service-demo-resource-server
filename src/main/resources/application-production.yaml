@@ -12,8 +12,11 @@ server:
 #Eureka client        
 eureka:
   client:
+    enabled: true
+    register-with-eureka: true # Disable registration with Eureka
+    fetch-registry: true # Disable fetching the registry
     serviceUrl:
-      defaultZone: http://eureka-server:8761/eureka/
+      defaultZone: http://host.docker.internal:8761/eureka/
     healthcheck:
       enabled: true
   instance:

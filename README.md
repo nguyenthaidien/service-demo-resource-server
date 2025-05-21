@@ -1,5 +1,10 @@
 # service-demo-resource-server
 
+mvn clean install
+#The following 1 profile is active: "dev"
+mvn spring-boot:run
+#
+mvn spring-boot:run -spring.profiles.active=prod
 
 
 ## Getting started

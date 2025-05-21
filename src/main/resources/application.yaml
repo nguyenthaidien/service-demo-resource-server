@@ -1,36 +1,5 @@
+server:
+  port: 9193
 spring:
   profiles:
     active: dev
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          jwk-set-uri: http://10.82.14.80:8080/realms/DCMSDEV-Realm/protocol/openid-connect/certs
-
-server:
-  port: 9193
-#Eureka client        
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://eureka-server:8761/eureka/
-    healthcheck:
-      enabled: true
-  instance:
-    appname: product-service
-    prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 20
-    lease-expiration-duration-in-seconds: 60
-logging:
-    level:
-      org:
-        springframework:
-          security:
-            web: DEBUG
-          hibernate: ERROR
-    file:
-      name: logs/application-debug.log
-      max-size: 2MB
-    pattern:
-      console: "%d %-5level %logger : %msg%n"
-      file: "%d %-5level [%thread] %logger : %msg%n"
