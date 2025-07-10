@@ -20,7 +20,7 @@ eureka:
     healthcheck:
       enabled: true
   instance:
-    appname: product-service
+    appname: demo-service
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 20
     lease-expiration-duration-in-seconds: 60

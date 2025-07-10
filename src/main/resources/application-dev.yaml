@@ -18,7 +18,7 @@ eureka:
   instance:
     # Application name as registered in Eureka
     # Ensure this matches the service name in the Docker Compose file or Kubernetes deployment  
-    appname: product-service
+    appname: demo-service
     prefer-ip-address: true # Ensures service registers with IP address; set consistently across all services
     # Interval (in seconds) at which this instance renews its lease with Eureka server
     lease-renewal-interval-in-seconds: 20
